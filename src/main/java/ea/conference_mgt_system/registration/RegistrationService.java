@@ -32,6 +32,7 @@ public class RegistrationService {
     private EntityManager entityManager;
 
 
+
     public Registration saveRegistration(Registration registration) {
 
         Registration newregistration1 = registrationRepository.save(registration);

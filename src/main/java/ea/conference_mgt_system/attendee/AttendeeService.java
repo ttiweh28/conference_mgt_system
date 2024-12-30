@@ -8,6 +8,7 @@ import ea.conference_mgt_system.payment.PaymentStatus;
 import ea.conference_mgt_system.registration.Registration;
 import ea.conference_mgt_system.registration.RegistrationRepository;
 import ea.conference_mgt_system.customer.CustomerRepository;
+import ea.conference_mgt_system.registration.RegistrationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,12 +23,10 @@ public class AttendeeService {
 
     @Autowired
     private CustomerRepository customerRepository;
-    @Autowired
-    private AttendeeRepository attendeeRepository;
-    @Autowired
-    private PaymentRepository paymentRepository;
+
     @Autowired
     private ConferenceRepository conferenceRepository;
+
 
 
 
